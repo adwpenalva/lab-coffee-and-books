@@ -1,2 +1,99 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
+
+{{!-- <div id="sample-map"></div>
+
+<script>
+  const $sampleMap = document.getElementById('sample-map');
+
+  function initMap () {
+    const map = new window.google.maps.Map($sampleMap, {
+      center: { lat: 38.75, lng: -9.25 },
+      zoom: 9
+    });
+   }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrJ1f_9MB0iFA2zFsHIbIK8sGWU91aQr8&callback=initMap"
+async defer></script> --}}
+
+
+{{!-- {{!-- const path = [
+            { lat: 38.7, lng: -9.35 },
+            { lat: 38.9, lng: -9.45 },
+            { lat: 39.3, lng: -9.05 }
+          ]; --}}
+
+
+          const marker = new window.google.maps.Marker({
+        position: { lat: -26.929740, lng: -49.063072 },
+        map
+        });
+      
+        const line = new window.google.maps.Polyline({
+          path,
+          map,
+          strokeColor: 'yellowgreen',
+          strokeWeight: 10
+        })
+
+        for (let position of path) {
+          new window.google.maps.Marker({ position, map });
+        } 
+        
+        const marker = new window.google.maps.Marker({
+        position: { lat: -26.929740, lng: -49.063072 },
+        map
+        });
+      
+        const line = new window.google.maps.Polyline({
+          path,
+          map,
+          strokeColor: 'yellowgreen',
+          strokeWeight: 10
+        })
+
+        for (let position of path) {
+          new window.google.maps.Marker({ position, map });
+        }
+
+        marker.addListener('click', () => {
+          // marker.setMap(null);
+          const infoWindow = new window.google.maps.InfoWindow({
+            content: "<span>Hello <strong>World</strong></span>"
+          })
+          infoWindow.open(map, marker);
+        });
+
+      locateUser()
+        .then(value => {
+          console.log(value)
+          const infoWindow = new window.google.maps.InfoWindow({
+            content: "You are here!",
+            position: {
+              lat: value.latitude,
+              lng: value.longitude
+            },
+            map
+          });
+        })
+        .catch(error => {
+          console.error(error);
+        });
+
+        let pin;
+
+        map.addListener('click', event => {
+          const position = {
+            lat: event.latLng.lat(),
+            lng: event.latLng.lng()
+          };
+
+          if (pin) {
+            pin.setMap(null);
+          }
+
+          pin = new window.google.maps.Marker({
+            position,
+            map
+          });
+        })--}}

@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00b7ff; }
+
+html,
+body,
+#sample-map {
+  width: 100%;
+  height: 100%; }
+
+/*# sourceMappingURL=style.css.map */

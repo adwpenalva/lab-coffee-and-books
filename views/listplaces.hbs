@@ -1,0 +1,10 @@
+<h1>In here please list the places</h1>
+
+<ul>
+  {{#each data}}
+  <li>
+    {{ name }}
+    <a href="/places/placeslist/{{id}}">See more of {{name}}</a>
+  </li>
+  {{/each}}
+</ul>
